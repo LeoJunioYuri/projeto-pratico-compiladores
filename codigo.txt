@@ -1,0 +1,4 @@
+SOMA{
+	soma <- -2+5
+	multi <- 2*3
+}
