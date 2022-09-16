@@ -10,7 +10,7 @@ declr: TIPO ID ('=' NUMERO)?;
 
 comandos: comando comandos | ;
 
-comando: soma | subtracao | multiplicacao | divisao | resto | condicional | classe | metodo | repeticao | ler | escrever;
+comando: soma | subtracao | multiplicacao | divisao | resto | condicional | classe | metodo | repeticao | ler | escrever | retorno;
 
 valor: ID | NUMERO;
 
@@ -62,7 +62,7 @@ DELINI: '{';
 DELFIM: '}';
 PV: ';';
 CONDICIONAL: 'SENAO' | 'SE';
-CLASSE: [A-Z];
+CLASSE: [A-Z] [A-Z]*;
 METODO: [A-Z] [a-z]*;
 ID: [a-z] [a-z 0-9]*;
 OP: '<=' | '>=' | '!=' | '=' | '<' | '>';
@@ -71,5 +71,5 @@ REP: 'FOR' | 'WHILE';
 LER: 'LENDO<<';
 ESCREVER: 'ESCREVENDO>>';
 RETORNO: 'retorna' | 'n_retorna';
-WS: [\t\n\r] ->skip;
+WS: [ \t\n\r]* ->skip;
 

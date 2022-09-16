@@ -1,3 +1,7 @@
-INTx=1
-soma <-x+5
-multi <-x*3
+cONDICOES{
+SE(x > y && x > 3){
+lendo<<x
+}SENAO{
+LENDO<<y
+}
+}
