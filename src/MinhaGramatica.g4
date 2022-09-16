@@ -1,6 +1,12 @@
 grammar MinhaGramatica;
 
-programa: comandos;
+@header{ package antlr; }
+
+programa: declaracao comandos;
+
+declaracao: (declr)*;
+
+declr: TIPO ID ('=' NUMERO)?;
 
 comandos: comando comandos | ;
 
@@ -42,6 +48,7 @@ escrever: ESCREVER valorneg;
 retorno: RETORNO valorneg | RETORNO;
 
 ATR: '<-';
+TIPO: 'INT';
 SOMA: '+';
 SUBTRACAO: '-';
 MULTI: '*';

@@ -1,0 +1,3 @@
+INTx=1
+soma <-x+5
+multi <-x*3
