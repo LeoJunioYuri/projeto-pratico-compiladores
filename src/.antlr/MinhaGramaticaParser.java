@@ -20,7 +20,7 @@ public class MinhaGramaticaParser extends Parser {
 		T__0=1, ATR=2, TIPO=3, SOMA=4, SUBTRACAO=5, MULTI=6, DIVISAO=7, RESTO=8, 
 		NUMERO=9, AP=10, FP=11, NEGATIVO=12, DELINI=13, DELFIM=14, PV=15, CONDICIONAL=16, 
 		CLASSE=17, METODO=18, ID=19, OP=20, BOOLOP=21, REP=22, LER=23, ESCREVER=24, 
-		RETORNO=25, WS=26;
+		RETORNO=25, WS=26, ErrorChar=27;
 	public static final int
 		RULE_programa = 0, RULE_declaracao = 1, RULE_declr = 2, RULE_comandos = 3, 
 		RULE_comando = 4, RULE_valor = 5, RULE_valorneg = 6, RULE_comparacao = 7, 
@@ -51,7 +51,7 @@ public class MinhaGramaticaParser extends Parser {
 			null, null, "ATR", "TIPO", "SOMA", "SUBTRACAO", "MULTI", "DIVISAO", "RESTO", 
 			"NUMERO", "AP", "FP", "NEGATIVO", "DELINI", "DELFIM", "PV", "CONDICIONAL", 
 			"CLASSE", "METODO", "ID", "OP", "BOOLOP", "REP", "LER", "ESCREVER", "RETORNO", 
-			"WS"
+			"WS", "ErrorChar"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -1266,7 +1266,7 @@ public class MinhaGramaticaParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\34\u00c3\4\2\t\2"+
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\35\u00c3\4\2\t\2"+
 		"\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13"+
 		"\t\13\4\f\t\f\4\r\t\r\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22"+
 		"\4\23\t\23\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\3\2\3\2\3\2\3\3\7\3"+

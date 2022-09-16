@@ -15,7 +15,78 @@ public class MyListener extends MinhaGramaticaBaseListener {
     @Override
     public void enterDeclr(MinhaGramaticaParser.DeclrContext ctx) {
         System.out.println("In declaração: " + ctx.getText());
+    }
 
+    @Override
+    public void exitSoma(MinhaGramaticaParser.SomaContext ctx) {
+        String id = ctx.ID().getText();
+        if (!tabelaSimbolos.containsKey(id)) {
+            System.out.println("Variável " + id + " não declarada");
+        }
+    }
+
+    @Override
+    public void exitOp_for(MinhaGramaticaParser.Op_forContext ctx) {
+        String id = ctx.ID().getText();
+        if (!tabelaSimbolos.containsKey(id)) {
+            System.out.println("Variável " + id + " não declarada");
+        }
+    }
+
+    @Override
+    public void exitInstrucao(MinhaGramaticaParser.InstrucaoContext ctx) {
+        String id = ctx.ID().getText();
+        if (!tabelaSimbolos.containsKey(id)) {
+            System.out.println("Variável " + id + " não declarada");
+        }
+    }
+
+    @Override
+    public void exitSubtracao(MinhaGramaticaParser.SubtracaoContext ctx) {
+        String id = ctx.ID().getText();
+        if (!tabelaSimbolos.containsKey(id)) {
+            System.out.println("Variável " + id + " não declarada");
+        }
+    }
+
+    @Override
+    public void exitMultiplicacao(MinhaGramaticaParser.MultiplicacaoContext ctx) {
+        String id = ctx.ID().getText();
+        if (!tabelaSimbolos.containsKey(id)) {
+            System.out.println("Variável " + id + " não declarada");
+        }
+    }
+
+    @Override
+    public void exitDivisao(MinhaGramaticaParser.DivisaoContext ctx) {
+        String id = ctx.ID().getText();
+        if (!tabelaSimbolos.containsKey(id)) {
+            System.out.println("Variável " + id + " não declarada");
+        }
+    }
+
+    @Override
+    public void exitResto(MinhaGramaticaParser.RestoContext ctx) {
+        String id = ctx.ID().getText();
+        if (!tabelaSimbolos.containsKey(id)) {
+            System.out.println("Variável " + id + " não declarada");
+        }
+    }
+
+    @Override
+    public void exitMetodo(MinhaGramaticaParser.MetodoContext ctx) {
+        String id = ctx.ID().getText();
+        if (!tabelaSimbolos.containsKey(id)) {
+            System.out.println("Variável " + id + " não declarada");
+        }
+    }
+
+    @Override
+    public void exitValor(MinhaGramaticaParser.ValorContext ctx) {
+        String id = ctx.ID().getText();
+        if (!tabelaSimbolos.containsKey(id)) {
+            System.out.println("Variável " + id + " não declarada");
+        }
     }
 
     @Override

@@ -1,7 +1,4 @@
-cONDICOES{
-SE(x > y && x > 3){
-lendo<<x
-}SENAO{
-LENDO<<y
-}
-}
+INT a=2
+INT b=2
+INT multi
+multi<-b*a

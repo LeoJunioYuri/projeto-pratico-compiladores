@@ -24,6 +24,7 @@ LER=23
 ESCREVER=24
 RETORNO=25
 WS=26
+ErrorChar=27
 '='=1
 '<-'=2
 'INT'=3

@@ -72,4 +72,4 @@ LER: 'LENDO<<';
 ESCREVER: 'ESCREVENDO>>';
 RETORNO: 'retorna' | 'n_retorna';
 WS: [ \t\n\r]* ->skip;
-
+ErrorChar: .;
